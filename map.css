@@ -1,0 +1,60 @@
+html,
+body {
+  height: 100%;
+}
+
+main {
+  position: relative;
+}
+
+#map {
+  width: 100%;
+  height: 75vh;
+  position: relative;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#map svg {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#map svg circle {
+  fill-opacity: 0.6;
+  stroke: white;
+  stroke-width: 1;
+  pointer-events: auto;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 1.25em;
+  margin-top: 0.75em;
+  font-size: 0.85rem;
+}
+
+.swatch {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  border-radius: 50%;
+  margin-right: 0.35em;
+}
+
+.departures {
+  background: #f28e2b;
+}
+
+.balanced {
+  background: #999;
+}
+
+.arrivals {
+  background: #4e79a7;
+}
